@@ -3,6 +3,9 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .header__logo {
     margin-top: 10px;
@@ -47,4 +50,12 @@
 .header__optionLine2 {
     font-size: 13px;
     font-weight: 800;
+}
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+}
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
 }
