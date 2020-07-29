@@ -1,9 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
-    return <div className='App'></div>;
+    return (
+        <Router>
+            <div className='app'>
+                <Switch>
+                    <Route path='/checkout'>
+                        <h1>checkout</h1>
+                    </Route>
+                    <Route path='/login'>
+                        <h1>Login</h1>
+                    </Route>
+                    <Route path='/'>
+                        <h1>Home</h1>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
